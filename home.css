@@ -42,6 +42,7 @@
   background-position: center;
   color: white;
   text-align: center;
+  box-shadow: 0px 0px 8px gray;
 }
 
 #portfolio{
@@ -75,7 +76,7 @@
 
 #front:hover{
   box-shadow: 2px 2px 8px #1A5276;
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 #front p{
@@ -90,6 +91,8 @@
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  box-shadow: 0px 0px 8px gray;
+
 }
 
 #footer li {
