@@ -1,4 +1,5 @@
 // VALIDACIÓ FORMULARI REGISTRE (myForm)
+
 const form = document.getElementById('myFormId');
 
 
@@ -78,13 +79,16 @@ function registerValidate() {
 	}
 }
 
+if(form){
 form.addEventListener("blur", function( event ) {
 	if(event.target.value!='') event.target.classList.remove('is-invalid');
 	registerValidate();
 }, true);
+}
 
 
 // VALIDACIÓ FORMULARI LOGIN (myForm2)
+
 const form2 = document.getElementById('myFormId2');
 
 function loginValidate() {
@@ -122,10 +126,12 @@ function loginValidate() {
 	}
 }
 
+if(form2){
 form2.addEventListener("blur", function( event ) {
 	if(event.target.value!='') event.target.classList.remove('is-invalid');
 	loginValidate();
 }, true);
+}
 
 
 // VALIDACIÓ FORMULARI CONTACT (myForm3)
@@ -166,10 +172,12 @@ function contactValidate() {
 	}
 }
 
+if(form3){
 form3.addEventListener("blur", function( event ) {
 	if(event.target.value!='') event.target.classList.remove('is-invalid');
 	contactValidate();
 }, true);
+}
 
 
 //Verify mail
